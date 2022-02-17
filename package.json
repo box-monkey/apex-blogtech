@@ -1,5 +1,5 @@
 {
-  "name": "mvctest",
+  "name": "apex-techblog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,9 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/box-monkey/apex-techblog.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/box-monkey/apex-techblog/issues"
+  },
+  "homepage": "https://github.com/box-monkey/apex-techblog#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
