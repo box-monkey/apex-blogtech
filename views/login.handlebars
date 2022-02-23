@@ -1,39 +1,41 @@
-{{!-- username login --}}
-{{!-- add styling to form container --}}
-<div class="form-container">
-  <form class="login-form">
+{{! username login }}
+<section class=".bg-danger">
+  <div class="form-container center">
+    <form class="login-form mb-3 text-center" style="max-width: 18rem;">
+      <div class=".bg-danger">
+        <label for="username-login">username</label>
+        <input type="text" id="username-login" />
+      </div>
+      <div>
+        <label for="password-login">password</label>
+        <input type="password" id="password-login" />
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="btn btn-light btn-lg btn-outline-dark mt-3"
+        >login</button>
+      </div>
+    </form>
+  </div>
+
+  {{! signup login  }}
+  <form class="signup-form mb-3 text-center" style="max-width: 18rem;">
     <div>
-      <label for="username-login">username</label>
-      <input type="text" id="username-login" />
+      <label for="username-signup">username:</label>
+      <input type="text" id="username-signup" />
     </div>
     <div>
-      <label for="password-login">password</label>
-      <input type="password" id="password-login" />
+      <label for="password-signup">password:</label>
+      <input type="password" id="password-signup" />
     </div>
     <div>
-      <button type="submit">login</button>
+      <button
+        type="submit"
+        class="btn btn-light btn-lg btn-outline-dark mt-3"
+      >signup</button>
     </div>
   </form>
-</div>
-
-{{!-- signup login  --}}
-{{!-- add styling  --}}
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
+</section>
 
 <script src="/javascript/login.js"></script>
